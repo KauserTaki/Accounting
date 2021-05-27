@@ -1,0 +1,17 @@
+{
+    "alias": "parasut",
+    "icon": "fas fa-exchange-alt",
+    "version": "2.0.7",
+    "category": "migration",
+    "active": 1,
+    "providers": [
+        "Modules\\Parasut\\Providers\\Main",
+        "Modules\\Parasut\\Providers\\Event"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "reports": [],
+    "widgets": [],
+    "settings": []
+}

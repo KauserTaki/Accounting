@@ -1,0 +1,55 @@
+{
+    "packages": [
+        {
+            "name": "yedincisenol/parasut",
+            "version": "v1.7.1",
+            "version_normalized": "1.7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yedincisenol/parasut.git",
+                "reference": "cdf3a39fb76a376f1cdcd17e66ce360922d16137"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yedincisenol/parasut/zipball/cdf3a39fb76a376f1cdcd17e66ce360922d16137",
+                "reference": "cdf3a39fb76a376f1cdcd17e66ce360922d16137",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3"
+            },
+            "time": "2020-05-01T14:45:19+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "yedincisenol\\Parasut\\Laravel\\LaravelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Parasut": "yedincisenol\\Parasut\\Laravel\\LaravelFacade"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "yedincisenol\\Parasut\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "brahim S. Orencik",
+                    "email": "o@yedincisenol.com"
+                }
+            ],
+            "description": "Parasut.com v4 Api Php and Laravel client",
+            "install-path": "../yedincisenol/parasut"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

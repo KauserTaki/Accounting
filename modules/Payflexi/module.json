@@ -1,0 +1,112 @@
+{
+    "alias": "payflexi",
+    "icon": "fa fa-cog",
+    "version": "1.1.0",
+    "category": "payments",
+    "active": 1,
+    "providers": [
+        "Modules\\Payflexi\\Providers\\Event",
+        "Modules\\Payflexi\\Providers\\Main"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "reports": [],
+    "widgets": [],
+    "settings": [
+        {
+            "type": "textGroup",
+            "name": "name",
+            "title": "payflexi::general.name",
+            "icon": "fa fa-font",
+            "attributes": {
+                "required": "required"
+            },
+            "rules": "required|string"
+        },
+        {
+            "type": "textGroup",
+            "name": "description",
+            "title": "payflexi::general.description",
+            "icon": "envelope",
+            "attributes": {},
+            "rules": "nullable|string"
+        },
+        {
+            "type": "selectGroup",
+            "name": "mode",
+            "title": "payflexi::general.form.mode",
+            "icon": "plane",
+            "values": {
+                "live": "Live",
+                "test": "Test"
+            },
+            "selected": "live",
+            "attributes": {
+                "required": "required"
+            },
+            "rules": "required|string"
+        },
+        {
+            "type": "textGroup",
+            "name": "api_test_public_key",
+            "title": "payflexi::general.form.api_test_public_key",
+            "icon": "exchange-alt",
+            "attributes": {
+                "required": "required"
+            },
+            "rules": "required|string"
+        },
+        {
+            "type": "textGroup",
+            "name": "api_test_secret_key",
+            "title": "payflexi::general.form.api_test_secret_key",
+            "icon": "exchange-alt",
+            "attributes": {
+                "required": "required"
+            },
+            "rules": "required|string"
+        },
+        {
+            "type": "textGroup",
+            "name": "api_live_public_key",
+            "title": "payflexi::general.form.api_live_public_key",
+            "icon": "exchange-alt",
+            "attributes": {
+                "required": "required"
+            },
+            "rules": "required|string"
+        },
+        {
+            "type": "textGroup",
+            "name": "api_live_secret_key",
+            "title": "payflexi::general.form.api_live_secret_key",
+            "icon": "exchange-alt",
+            "attributes": {
+                "required": "required"
+            },
+            "rules": "required|string"
+        },
+        {
+            "type": "textGroup",
+            "name": "webhook_url",
+            "title": "payflexi::general.form.webhook_url",
+            "icon": "exchange-alt",
+            "attributes": {
+                "required": "required",
+                "readonly": "readonly"
+            },
+            "rules": "required|string"
+        },
+        {
+            "type": "radioGroup",
+            "name": "customer",
+            "title": "payflexi::general.form.customer",
+            "enable": "general.yes",
+            "disable": "general.no",
+            "attributes": {},
+            "rules": "required|integer"
+        }
+    ],
+    "extra-modules": {}
+}
